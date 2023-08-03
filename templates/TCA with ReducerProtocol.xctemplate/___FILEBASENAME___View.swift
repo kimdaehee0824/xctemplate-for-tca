@@ -1,27 +1,25 @@
-//___FILEHEADER___
-
-import SwiftUI
 import ComposableArchitecture
+import SwiftUI
 
 // MARK: - View
 
 public struct ___FILEBASENAMEASIDENTIFIER___: View {
-  @ObservedObject private var viewStore: ViewStoreOf<___VARIABLE_productName:identifier___>
   private let store: StoreOf<___VARIABLE_productName:identifier___>
 
   public init(store: StoreOf<___VARIABLE_productName:identifier___>) {
-    self.viewStore = .init(store)
     self.store = store
   }
 
   public var body: some View {
-    List {
-      Text("Hello, ___VARIABLE_productName:identifier___!")
-    }
-    .task {
-      await viewStore
-        .send(.onAppear)
-        .finish()
+    WithViewStore(self.store, observe: { $0 }) { viewStore in
+      List {
+        Text("Hello, Male!")
+      }
+      .task {
+        await viewStore
+          .send(.onAppear)
+          .finish()
+      }
     }
   }
 }
@@ -34,8 +32,7 @@ struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
       .previewLayout(.sizeThatFits)
   }
 
-  static let store: StoreOf<___VARIABLE_productName:identifier___> = .init(
-    initialState: .init(),
-    reducer: ___VARIABLE_productName:identifier___()
-  )
+  static let store = Store(initialState: .init()) {
+    ___VARIABLE_productName:identifier___()
+  }
 }
