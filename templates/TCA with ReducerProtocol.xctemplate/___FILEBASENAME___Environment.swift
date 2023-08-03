@@ -1,5 +1,3 @@
-//___FILEHEADER___
-
 import Dependencies
 
 public protocol ___FILEBASENAMEASIDENTIFIER___ {
@@ -18,6 +16,7 @@ public struct ___FILEBASENAMEASIDENTIFIER___Mock: ___FILEBASENAMEASIDENTIFIER___
   public init() {
   }
 }
+
 // MARK: - DependencyKey
 
 enum ___VARIABLE_productName:identifier___Key: DependencyKey {
