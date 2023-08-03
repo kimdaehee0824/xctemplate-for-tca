@@ -1,8 +1,8 @@
 import ComposableArchitecture
 
 extension ___VARIABLE_productName:identifier___ {
-  public enum Action: Equatable, BindableAction {
-    case onAppear
-    case binding(BindingAction<___VARIABLE_productName:identifier___.State>)
+  public struct State: Equatable {
+    public init() {
+    }
   }
 }
