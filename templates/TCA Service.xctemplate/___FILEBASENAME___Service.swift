@@ -1,5 +1,3 @@
-//___FILEHEADER___
-
 import ComposableArchitecture
 
 protocol ___FILEBASENAMEASIDENTIFIER___ {
