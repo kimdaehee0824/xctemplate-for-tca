@@ -1,5 +1,3 @@
-//___FILEHEADER___
-
 import ComposableArchitecture
 
 extension ___VARIABLE_productName:identifier___ {
