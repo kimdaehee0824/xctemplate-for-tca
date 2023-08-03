@@ -16,9 +16,9 @@
 ## How to install
 
 ```sh
-❯ git clone git@github.com:riiid/xctemplate-for-tca.git
-❯ cd xctemplate-for-tca
-❯ make
+git clone git@github.com/kimdaehee0824/xctemplate-for-tca.git
+cd xctemplate-for-tca
+make
 ```
 
 ## Usage
