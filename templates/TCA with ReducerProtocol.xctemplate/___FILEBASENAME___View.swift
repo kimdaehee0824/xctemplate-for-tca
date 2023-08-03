@@ -1,14 +1,12 @@
 //___FILEHEADER___
 
 import SwiftUI
-
 import ComposableArchitecture
 
 // MARK: - View
 
 public struct ___FILEBASENAMEASIDENTIFIER___: View {
-  @ObservedObject
-  private var viewStore: ViewStoreOf<___VARIABLE_productName:identifier___>
+  @ObservedObject private var viewStore: ViewStoreOf<___VARIABLE_productName:identifier___>
   private let store: StoreOf<___VARIABLE_productName:identifier___>
 
   public init(store: StoreOf<___VARIABLE_productName:identifier___>) {
